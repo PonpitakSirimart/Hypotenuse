@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pythagorean Theorem : solve for hypotenuse"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/triangle"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/showSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C = ?"
+            android:textSize="14dp"
+            android:paddingTop="40dp"
+            android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/leg_a"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/leg_b"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SOLVE"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
